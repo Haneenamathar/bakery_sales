@@ -150,7 +150,7 @@ The following Python libraries were used in this project:
 
 ## Acknowledgements
 
-*I would like to express my sincere gratitude to Mr. Vasi, my course facilitator, and to my classmates for their support and encouragement throughout this project.
+I would like to express my sincere gratitude to Mr. Vasi, my course facilitator, and to my classmates for their support and encouragement throughout this project.
 
 I am also grateful to the Code Institute for providing high‑quality learning materials, guidance, and a structured framework that helped me complete this assignment successfully.
 
