@@ -1,92 +1,157 @@
-# Project Bakery_sales
 
-**Project Bakery_sales** is a comprehensive data analysis tool designed to streamline data exploration, analysis, and visualisation. The tool supports multiple data formats and provides an intuitive interface for both novice and expert data scientists.
+# Project - Bread Basket Analysis
 
-# ![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
 
-## Dataset Content
 
-* Describe your dataset. Choose a dataset of reasonable size to avoid exceeding the repository's 100GB limit.
+## Project Overview
+
+This project analyses customer purchasing behaviour using the Bread Basket dataset. The project follows an ETL (Extract, Transform, Load) process to clean and prepare the data before performing Exploratory Data Analysis (EDA).
+
+The aim is to identify customer purchasing patterns, understand product popularity, and generate business insights that can support inventory planning and operational decision-making.
 
 ## Business Requirements
 
-* Describe your business requirements
+Understanding customer purchasing behaviour is important for any retail business. By analysing transaction data, businesses can identify popular products, recognise purchasing trends, and improve inventory planning.
 
-## Hypothesis and how to validate?
+This project explores bakery transaction data to answer these business questions and provide data-driven insights.
 
-* List here your project hypothesis(es) and how you envision validating it (them) 
+
+
+
+## Hypotheses
+
+*H1:* Some bakery products are purchased more frequently than others.
+
+*H2:* Customer purchasing behaviour changes depending on the time of day, day of the week, and month.
+
+*H3:* Many customer transactions contain more than one bakery product, indicating opportunities for product bundling and cross-selling.
+
+*H4:* Customer purchasing patterns can provide insights to improve inventory planning, product availability, and business decision-making 
 
 ## Project Plan
 
-* Outline the high-level steps taken for the analysis.
-* How was the data managed throughout the collection, processing, analysis and interpretation steps?
-* Why did you choose the research methodologies you used?
+ Dataset
 
-## The rationale to map the business requirements to the Data Visualisations
+The project uses the *Bread Basket* dataset from Kaggle.
 
-* List your business requirements and a rationale for mapping them to the Data Visualisations
+The dataset contains bakery transaction records, including:
 
-## Analysis techniques used
+- Transaction ID
+- Item purchased
+- Date and time of purchase
 
-* List the data analysis methods used and explain limitations or alternative approaches.
-* How did you structure the data analysis techniques? Justify your response.
-* Did the data limit you, and did you use an alternative approach to meet these challenges?
-* How did you use generative AI tools to help with ideation, design thinking and code optimisation?
+During the ETL process, additional features were created to support the analysis, including:
 
-## Ethical considerations (optional)
+- Hour
+- Day of the week
+- Month
+- Period of day
+- Weekday/Weekend
 
-* Feel free to delete this section if this is a data visualisation only (unit 1 or 2) project submission.
-* Were there any data privacy, bias or fairness issues with the data?
-* How did you overcome any legal or societal issues?
 
- 
 
-## Unfixed Bugs
+## Project Objectives
 
-* Please list any unfixed bugs and explain why they were not fixed. This section should include shortcomings of the frameworks or technologies used. Although time can be a significant variable to consider, paucity of time and difficulty understanding implementation are not valid reasons to leave bugs unfixed.
-* Did you recognise gaps in your knowledge, and how did you address them?
-* If applicable, include evidence of feedback received (from peers or instructors) and how it improved your approach or understanding.
+- Analyse customer purchasing behaviour using the cleaned Bread Basket dataset.
+- Identify the most frequently purchased bakery products.
+- Analyse purchasing trends by hour, day of the week, and month.
+- Analyse multiple-product purchasing behaviour.
+- Evaluate the project hypotheses using data analysis and visualisations.
+- Generate insights to support inventory planning and business decision-making
+
+
+## Rationale for Mapping Business Requirements to Data Visualisations
+
+The charts were created to answer the project objectives and hypotheses.
+
+| Business Requirement | Chart Used | Reason |
+|----------------------|------------|--------|
+| Find the most popular bakery products | Top 10 Products Bar Chart | To show which products customers buy the most. |
+| Understand when customers buy products | Purchases by Hour | To identify the busiest hours of the day. |
+| Find the busiest days | Purchases by Day of the Week | To compare customer purchases across the week. |
+| Compare purchases by month | Purchases by Month | To see how customer purchases change over time. |
+| Compare weekdays and weekends | Weekday vs Weekend Chart | To see whether customers buy more on weekdays or weekends. |
+| Compare different times of the day | Period of Day Chart | To find out which part of the day is busiest. |
+| Understand how many products customers buy | Items per Transaction Chart | To see if customers usually buy one item or multiple items. | 
+
+
+## Analysis Techniques Used
+
+The project used Exploratory Data Analysis (EDA) to understand customer purchasing behaviour and identify trends within the Bread Basket dataset.
+
+The following techniques were used:
+
+- Data cleaning and transformation (ETL)
+- Descriptive statistics
+- Grouping and aggregation using Pandas
+- Frequency analysis
+- Data visualisation using Matplotlib
+- Simple comparisons across different time periods
+
+
 
 ## Development Roadmap
 
-* What challenges did you face, and what strategies were used to overcome these challenges?
-* What new skills or tools do you plan to learn next based on your project experience? 
+### Challenges Faced
 
-## Deployment (optional)
+During this project, I faced a few challenges while cleaning the dataset and deciding how to analyse the data. I also found it challenging to choose the right charts to answer my project objectives and hypotheses.
 
-* If this is a Unit 3 Streamlit, Power BI or Tableau Public project, then you can include a link here and explain how you hosted the dashboard.
+These challenges were overcome by testing different approaches, reviewing the dataset carefully, and improving the analysis step by step until the results were clear and easy to understand.
 
-### Heroku (optional)
+### Skills to Develop
 
-* This section is necessary only if you are deploying a Streamlit app to Heroku as part of your submission for units 2 and 3. 
-* The App live link is: https://YOUR_APP_NAME.herokuapp.com/ 
-* Set the `.python-version` Python version to a [Heroku-22](https://devcenter.heroku.com/articles/python-support#supported-runtimes) stack currently supported version.
-* The project was deployed to Heroku using the following steps.
+After completing this project, I would like to learn:
 
-1. Log in to Heroku and create an App
-2. From the Deploy tab, select GitHub as the deployment method.
-3. Select your repository name and click Search. Once it is found, click Connect.
-4. Select the branch you want to deploy, then click Deploy Branch.
-5. The deployment process should happen smoothly if all deployment files are fully functional. Click the button Open App at the top of the page to access your App.
-6. If the slug size is too large, then add large files not required for the app to the `.slugignore` file.
+- More advanced data visualisation techniques.
+- Market basket analysis to better understand products purchased together.
+- Predictive analysis using machine learning.
+- Power BI and Tableau for creating interactive dashboards.
+
+## Deployment
+
+This project was completed using Jupyter Notebook in Visual Studio Code and uploaded to GitHub as part of the Code Institute AI Bootcamp Unit 1 assessment.
+
+The repository contains the notebook, cleaned dataset, README, and supporting project files
+
 
 ## Main Data Analysis Libraries
 
-* Here you should list the libraries you used in the project and provide an example(s) of how you used these libraries.
+The following Python libraries were used in this project:
+
+- *Pandas* – Used to load, clean, organise, and analyse the dataset.
+- *NumPy* – Used for basic numerical operations.
+- *Matplotlib* – Used to create charts and visualisations.
+- *Seaborn* – Used to improve the appearance of the charts.
 
 ## Credits
 
-* In this section, you need to reference where you got your content, media and extra help from. It is common practice to use code from other repositories and tutorials; however, it is important to be very specific about these sources to avoid plagiarism. 
-* You can break the credits section into Content and Media, depending on what you include in your project. 
+### Dataset
 
-### Content 
+- Bread Basket dataset from Kaggle:
+  https://www.kaggle.com/datasets/mittalvasu95/the-bread-basket
 
-- The text for the Home page was taken from the Wikipedia Article A
-- Instructions on how to implement form validation were taken from a [Specific YouTube Tutorial](https://www.youtube.com/)
-- The icons in the footer were taken from [Font Awesome](https://fontawesome.com/)
+### Learning Resources
+
+- Code Institute AI Bootcamp course materials.
+- Pandas documentation:
+  https://pandas.pydata.org/
+
+- Matplotlib documentation:
+  https://matplotlib.org/
+
+- Seaborn documentation:
+  https://seaborn.pydata.org/
+
+### AI Assistance
+
+-Copilot/ChatGPT was used as a learning tool to help explain Python code, improve project documentation, and support the ETL and EDA process.
 
 
 
-## Acknowledgements (optional)
+## Acknowledgements
 
-* Thank the people who supported this project.
+*I would like to express my sincere gratitude to Mr. Vasi, my course facilitator, and to my classmates for their support and encouragement throughout this project.
+
+I am also grateful to the Code Institute for providing high‑quality learning materials, guidance, and a structured framework that helped me complete this assignment successfully.
+
+Finally, I would like to acknowledge the assistance of Microsoft Copilot and OpenAI’s ChatGPT, which supported my learning by helping me understand Python concepts, data analysis techniques, and project documentation during the development of this project.
